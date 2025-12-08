@@ -1,11 +1,13 @@
-export class pessoa {
-    public nome: String;
-    public idade: Number;
+export class Pessoa {
+    public nome: string;
+    public idade: number;
     
-    Construtor(nome, idade){
-        this.nome = nome
-        this.idade = idade
-    
+    constructor(nome: string, idade: number){
+        this.nome = nome;
+        this.idade = idade;
     }
-     dormir(){}
+
+    dormir() {
+        console.log(`${this.nome} está dormindo`);
     }
+}

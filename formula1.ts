@@ -1,12 +1,14 @@
-import { veiculo } from "./veiculo";
+import { Veiculo } from "./veiculo";
 
-export class Formula1 extends veiculo{
-    public tamanho: Number;
+export class Formula1 extends Veiculo {
+    public tamanho: number;
 
-    construtor(tamanho,roda,placa){
-        super(roda,placa)
-        this.tamanho = tamanho
+    constructor(tamanho: number, roda: number, placa: string) {
+        super(roda, placa);
+        this.tamanho = tamanho;
     }
 
-    velocidade(){}
+    velocidade() {
+        console.log("A Fórmula 1 está muito rápida!");
+    }
 }

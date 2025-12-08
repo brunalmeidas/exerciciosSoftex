@@ -1,11 +1,13 @@
-export class veiculo {
-    public roda: Number;
-    public placa : String
+export class Veiculo {
+    public roda: number;
+    public placa: string;
     
-    Construtor(roda, placa){
-        this.placa = placa
-        this.roda = roda
-    
+    constructor(roda: number, placa: string){
+        this.roda = roda;
+        this.placa = placa;
     }
-    ligar(){}
+
+    ligar() {
+        console.log("Veículo ligado!");
     }
+}

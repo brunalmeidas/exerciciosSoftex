@@ -1,14 +1,14 @@
-import { pessoa } from "./pessoa";
+import { Pessoa } from "./pessoa";
 
-export class Pessoa1 extends pessoa{
+export class Pessoa1 extends Pessoa {
     public pessoafisica: string;
 
-
-    construtor(pessoafisica, nome, idade) {
-        super (nome, idade)
-        this.pessoafisica = pessoafisica
-
-    
+    constructor(pessoafisica: string, nome: string, idade: number) {
+        super(nome, idade);
+        this.pessoafisica = pessoafisica;
     }
-    informação(){}
+
+    informacao() {
+        console.log(`Pessoa física: ${this.pessoafisica}`);
+    }
 }
